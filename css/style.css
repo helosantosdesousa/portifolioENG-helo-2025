@@ -9,13 +9,6 @@
     --fonte-botao-hover: #e6006e;
     --barra-skills:  #fcf0f0;
     --container-darker: #cccccc;
-
-
-    --container-roxo-escuro: #rgb(255, 211, 221);
-    --container-roxo: #rgb(255, 211, 221);
-    --roxo-mais-escuro: #rgb(255, 211, 221);
-    --roxo-mais-claro:#rgb(255, 211, 221);
-    --roxo-medio: #rgb(255, 211, 221);
     --branco: #EFEBE0;
     --preto: #000;
     --cinza: #bcacd0;
@@ -82,7 +75,7 @@ color: var(--subtitulos);
     padding-top: 2em;
 }
 
-#btn-container a.btn {
+#btn-container a.btn{
     background-color: var(--nav);
     border: none;
     color: #fff;
@@ -212,4 +205,16 @@ color: var(--nav);
 
 #sobre-helo{
     color: var(--nav);
+}
+
+#btn-certificados {
+    background-color: var(--nav);
+    border: none;
+    color: #fff;
+}
+
+#btn-certificados:hover {
+    background-color: var(--botao-hover);
+    color: var(--fonte-botao-hover);
+    border: none;
 }
