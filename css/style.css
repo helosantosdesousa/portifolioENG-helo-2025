@@ -99,6 +99,19 @@ color: var(--subtitulos);
     color: var(--fonte-botao-hover);
 }
 
+#container-img-helo {
+    position: relative;
+    z-index: 1;
+}
+
+#imgHelo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
 #skills {
     background-color: var(--container-darker);
 }
@@ -129,16 +142,16 @@ li {
 }
 #projetos{
     background-color: var(--container-principal);
-    color: var(--cinza);
 }
 
-.titulo-projetos {
-    color: var(--roxo-medio);
+.projetos-titulo{
+    color: var(--nav);
 }
    
 .titulo-projetos span{
     color: var(--branco);
 }
+
 #habilidades {
     background-color: var(--container-roxo-escuro);
     margin-bottom: 0;
@@ -171,28 +184,93 @@ color: var(--cinza);
    height: 95%; 
 }
 
-#projetos-titulo{
-color: var(--nav);
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
 }
 
-#projetos-paragrafo{
-    color: #000;
+.card-img-top {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px 6px 0 0;
 }
 
-.card .card-body .card-title {
-color: var(--nav);
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.card .card-body .btn {
-    background-color: var(--nav); 
-    color: #fff;
-    border: none; 
+.card-title {
+  font-size: 1rem;
+  color: var(--nav);
 }
 
-.card .card-body .btn:hover {
-    background-color: var(--botao-hover);
-    color: var(--fonte-botao-hover);
-    border: none;
+.card-text {
+  font-size: 0.875rem;
+  flex-grow: 1;
+}
+
+.card .btn {
+  background-color: var(--nav);
+  color: #fff;
+  border: none;
+  margin-top: auto;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: var(--botao-hover);
+  color: var(--fonte-botao-hover);
+  border: none;
+  font-weight: bold;
+}
+
+#projetos .row {
+  margin: 0;
+}
+
+@media (max-width: 575.98px) {
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+}
+#projetos > .container {
+  padding-left: 0.5rem;  
+  padding-right: 0.5rem;
+  max-width: 100%; 
+}
+
+
+.btn-projetos {
+  background-color: var(--nav);
+  color: #fff;
+  border:none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-projetos:hover,
+.btn-projetos:focus {
+  background-color: var(--botao-hover);
+  color: var(--fonte-nav-hover);
+  border: none;
+  font-weight: bold;
+  box-shadow: none;
+}
+
+.btn.active {
+  background-color: var(--botao-hover);
+  color: var(--fonte-nav-hover);
+  font-weight: bold;
 }
 
 .carousel-inner img {
@@ -218,3 +296,4 @@ color: var(--nav);
     color: var(--fonte-botao-hover);
     border: none;
 }
+
